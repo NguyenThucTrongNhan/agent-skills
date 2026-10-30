@@ -1,0 +1,14 @@
+version: 1.0.0
+id: s4u.tools.repo-onboarding-context
+name: Repository Onboarding Context
+description: Analyzes repository architecture, identifies key modules, and provides a clear onboarding guide for new developers and AI agents.
+permissions:
+  - file-read
+  - execute-script
+intended_platforms:
+  - antigravity
+  - claude-code
+  - codex
+compatibility_status: manual-qa-partial
+compatibility_notes: 'Codex desktop scenarios passed in one session; exact app version/model not recorded. Unrelated prompt not run. Antigravity and Claude Code untested.'
+tags: [onboarding, architecture, context, dx]
