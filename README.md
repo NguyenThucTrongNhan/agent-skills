@@ -8,6 +8,22 @@ Reusable skills for AI coding agents. Each skill is maintained in its own folder
 |---|---|---|
 | [Repository Onboarding Context](skills/repo-onboarding-context/SKILL.md) | Produce a read-only, evidence-based report about an unfamiliar repository. | Python 3 and an agent with access to the local project and command execution. |
 
+## Install through the Claude Code marketplace
+
+After the marketplace metadata has been pushed to this repository, run this inside a Claude Code session:
+
+```text
+/plugin install agent-skills --marketplace NguyenThucTrongNhan/agent-skills
+```
+
+This installs the `agent-skills` plugin from the `nhan-agent-skills` marketplace. Repository access is required if the repository is private. Start a fresh session after installation and invoke the packaged skill with:
+
+```text
+/agent-skills:repo-onboarding-context Review this repository using the read-only onboarding workflow. Keep the report in chat.
+```
+
+A local marketplace installation smoke scenario has passed with limited evidence. Installation by fetching this marketplace from GitHub remains to be verified. This marketplace is maintained in this repository; it is separate from Anthropic's reviewed directory.
+
 ## Download
 
 Open [Releases](https://github.com/NguyenThucTrongNhan/agent-skills/releases) and select the release for the skill you need. For Repository Onboarding Context 1.0.0, download both assets into the same folder:
@@ -88,7 +104,9 @@ To remove the skill, delete only its `repo-onboarding-context` folder from your 
 
 ## Verification and compatibility
 
-Source-copy integrity, package checksum, and automated script and packaging checks have passed. Manual host QA is partial: Codex desktop scenarios passed in one session, but the exact app version and model were not recorded. The unrelated-prompt scenario was not run. Claude Code and Antigravity have not been tested. Installation paths documented by a host do not by themselves prove this skill's behavior in that host.
+Source-copy integrity, package checksum, and automated script and packaging checks have passed. Manual host QA is partial: Codex desktop scenarios passed in one session, but the exact app version and model were not recorded. The unrelated-prompt scenario was not run. Antigravity has not been tested. Installation paths documented by a host do not by themselves prove this skill's behavior in that host.
+
+Claude Code 2.1.305, Opus 5.5: basic onboarding scenario passed on 2026-10-30. Git status showed only the installed skill directory as untracked, matching the reported starting state. Compatibility remains partial: the complete tool trace and changes to ignored files were not independently verified.
 
 ## References
 

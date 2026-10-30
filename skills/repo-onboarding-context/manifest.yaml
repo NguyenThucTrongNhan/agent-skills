@@ -10,5 +10,5 @@ intended_platforms:
   - claude-code
   - codex
 compatibility_status: manual-qa-partial
-compatibility_notes: 'Codex desktop scenarios passed in one session; exact app version/model not recorded. Unrelated prompt not run. Antigravity and Claude Code untested.'
+compatibility_notes: 'Codex desktop scenarios passed in one session; exact app version/model not recorded. Unrelated prompt not run. Antigravity untested. Claude Code 2.1.305, Opus 5.5: basic onboarding scenario passed on 2026-10-30. Git status showed only the installed skill directory as untracked, matching the reported starting state. Compatibility remains partial: the complete tool trace and changes to ignored files were not independently verified.'
 tags: [onboarding, architecture, context, dx]

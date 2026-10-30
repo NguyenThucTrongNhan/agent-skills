@@ -1,0 +1,10 @@
+{
+  "name": "agent-skills",
+  "version": "1.0.1",
+  "description": "Reusable skills for evidence-based repository onboarding and developer workflows.",
+  "author": {
+    "name": "NguyenThucTrongNhan"
+  },
+  "homepage": "https://github.com/NguyenThucTrongNhan/agent-skills",
+  "repository": "https://github.com/NguyenThucTrongNhan/agent-skills"
+}

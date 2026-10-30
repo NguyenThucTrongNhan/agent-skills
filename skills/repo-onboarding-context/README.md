@@ -22,5 +22,7 @@ application, or modify the reviewed repository.
 
 Manual QA is partial. Codex desktop scenarios passed in one session, but the
 exact app version and model were not recorded. The unrelated-prompt scenario
-was not run. Antigravity and Claude Code have not been tested. Do not interpret
+was not run. Antigravity has not been tested. Do not interpret
 the package format or local installation support as proof of host behavior.
+
+Claude Code 2.1.305, Opus 5.5: basic onboarding scenario passed on 2026-10-30. Git status showed only the installed skill directory as untracked, matching the reported starting state. Compatibility remains partial: the complete tool trace and changes to ignored files were not independently verified.
